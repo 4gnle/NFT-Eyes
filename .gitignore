@@ -9,3 +9,4 @@ cache
 artifacts
 
 /PROOF
+/scripts/deploy.js
