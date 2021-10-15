@@ -1,7 +1,7 @@
 const main = async () => {
   const nftEyesContract = await hre.ethers.getContractFactory('NFTEyes');
 
-  const nftContract = await nftContractFactory.deploy();
+  const nftContract = await nftEyesContract.deploy();
 
   await nftContract.deployed();
 
