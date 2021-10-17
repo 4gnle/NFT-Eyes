@@ -1,5 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
-require('dotenv').config()
+require("dotenv").config();
 
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   const accounts = await hre.ethers.getSigners();
@@ -15,12 +15,12 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
- module.exports = {
-   solidity: '0.8.0',
-   networks: {
-     ropsten: {
-       url: process.env.ALCHEMY_API,
-       accounts: [process.env.PRIVATE_KEY],
-     },
-   },
- };
+module.exports = {
+  solidity: "0.8.0",
+  networks: {
+    ropsten: {
+      url: process.env.ALCHEMY_API,
+      accounts: [process.env.PRIVATE_KEY],
+    },
+  },
+};
